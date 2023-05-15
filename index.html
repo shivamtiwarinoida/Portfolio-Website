@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo"><a href="#hero">Shiv<span>Am</span></a></div>
+        <ul id="list1">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#formf">Contact Me</a></li>
+        </ul>
+    </nav>
+    <div class="btns1">
+        <input type="checkbox" name="" value="" id="check">
+        <label for="check" onclick="check()"><i class="fas fa-bars" id="checkb"></i></label>
+    </div>
+    <section class="hero" id="hero">
+        <div class="image">
+            <img src="img2.jpg" alt="shivam" height="300px">
+        </div>
+        <div class="info">
+            <p>Hi There,</p>
+            <h1>I'm ShivAm <span>Tiwari</span></h1>
+            <p>Front End Developer</p>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="heading">About <span class="red">Me</span></h1>
+        <div class="divider"></div>
+        <p>I am a Tech Enthusiast.I am eager to join a tech company that builds out-of-the-box solutions for regional
+            clients. I am skilled in developing plans, managing projects, and user documentation.</p>
+    </section>
+    <section id="project">
+        <h1 class="heading">Projects</h1>
+        <div class="divider"></div>
+        <div clas="=proset">
+            <div class="card">
+                <h3>Tic Tac Toe</h3>
+                <p>It is one of The game that we all used to play in childhood
+                    I made it using vanilla Js which you can check it out
+                </p>
+                <a href="https://shivamtiwarinoida.github.io/tic_tac_toe/">Visit</a>
+            </div>
+            <div class="card">
+                <h3>Whac A Mole</h3>
+                <p>Another game for children which is a two player game .It consit of two color red & blue please have a
+                    look.
+                </p>
+                <a href="https://shivamtiwarinoida.github.io/whac_a_mole_game/">Visit</a>
+            </div>
+            <div class="card">
+                <h3>Guess The NUmber</h3>
+                <p>The game for programmer which is in actual based on Binary Search Algorithm using simple Js.Check it
+                    out
+                </p>
+                <a href="https://shivamtiwarinoida.github.io/game_guess/index.html">Visit</a>
+            </div>
+            <div class="card">
+                <h3>Calculator</h3>
+                <p>It is my first Project that consist of a simple use Calculator I made using React Js.Please Have a
+                    glance
+                </p>
+                <a href="https://leafy-jelly-da2a88.netlify.app/">Visit</a>
+            </div>
+            <div class="card">
+                <h3>To Do App</h3>
+                <p>It consist of ToDo app and timer , Faq ,etc. It is plain work of JavaScrpit .You should have a Look.
+                </p>
+                <a href="https://shivamtiwarinoida.github.io/tic_tac_toe/">Visit</a>
+            </div>
+        </div>
+    </section>
+    <section id="skills">
+        <h1 class="heading">Skills <span class="red">Set</span></h1>
+        <div class="divider"></div>
+        <ul>
+            <li>Web</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>C</li>
+            <li>C++</li>
+            <li>Tkinter</li>
+            <li>React.js</li>
+            <li>PyGame</li>
+        </ul>
+    </section>
+    <section id="formf">
+        <div>
+            <h1>Contact <span class="red">Me</span></h1>
+            <div class="divider"></div>
+        </div>
+        <div class="form">
+            <form action="https://formsubmit.co/shivamtiwariastudent@gmail.com" method="POST">
+                <input type="text" name="Name" placeholder="Name">
+                <input type="email" name="Email" required placeholder="Email@ex.com">
+                <input type="text" name="Phone" placeholder="+91-000">
+                <input type="text" name="Msg" placeholder="Message">
+                <input type="hidden" name="_captcha" value="false">
+                <button type="submit" class="btn23">Send</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        made by am_shiv(<span>shivamtiwariastudent@gmail.com</span>)
+        <a href="https://www.instagram.com/am_shiv2018/"><img src="icon1.svg" alt=""></a>
+        <a href="https://www.linkedin.com/in/shivam-tiwari-658709252/"><img src="linkedin.svg" alt=""></a>
+    </footer>
+    <script>
+        const check = ()=>{
+            console.log("working");
+            const checkEd=document.getElementById('check');
+            const ul=document.getElementById('list1');
+            console
+
+            if(checkEd.checked==true){
+                ul.style.display='block';
+            }
+            else{
+                ul.style.display='none';
+            }
+        }
+    </script>
+</body>
+
+</html>
